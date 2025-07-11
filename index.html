@@ -27,11 +27,63 @@
             </p>
         </header>
 
-        <form>
+        <form class="generator-form">
+
+            <div class="input-range--div">
+                <p class="Character-length--box">
+                    Character Length
+                    <span class="Character-quantity">10</span>
+                </p>
+                <input class="input-range" type="range" min="0" max="20" value="10">
+            </div>
+            
+            <ul>
+                <li>
+                    <input type="checkbox" id="checkbox-uppercase">
+                    <label for="checkbox-uppercase">Include Uppercase Letters</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="checkbox-lowecase">
+                    <label for="checkbox-lowecase">Include Lowercase Letters</label>   
+                </li>
+
+                <li>
+                    <input type="checkbox" id="checkbox-numbers">
+                    <label for="checkbox-numbers">Include Numbers</label>   
+                </li>
+
+                <li>
+                    <input type="checkbox" id="checkbox-symbols">
+                    <label for="checkbox-symbols">Include Symbols</label>   
+                </li>
+            </ul>
+
+            <div class="password-strength--div">
+
+                <p>strength</p>
+
+                <div>
+                    <p class="password-strength">medium</p>
+
+                    <div class="password-strength--boxes">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button type="submit">
+                GENERATE
+                <img src="./assets/images/icon-arrow-right.svg" alt="icon-arrow">
+            </button>
             
         </form>
         
-
     </main>
 
 </body>

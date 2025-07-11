@@ -36,5 +36,20 @@ body {
   height: 20px;
   cursor: pointer;
 }
+.generator--main .generator-form {
+  background-color: #24232C;
+  padding: 16px 21px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.generator--main .generator-form .input-range--div .Character-length--box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.generator--main .generator-form .input-range--div .input-range {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

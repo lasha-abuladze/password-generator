@@ -56,5 +56,30 @@ body {
             }
         }
     }
+
+    .generator-form {
+        background-color: $form-Backgroud;
+        padding: 16px 21px;
+        box-sizing: border-box;
+        text-align: left;
+
+        .input-range--div {
+            
+            .Character-length--box {
+                @include flex-row();
+                justify-content: space-between;
+                margin-bottom: 16px;
+            }
+
+            .input-range {
+                width: 100%;
+            }
+        }
+
+        
+
+    }
+
+
 }
 
