@@ -1,6 +1,6 @@
 body {
   background-color: #08070B;
-  color: #fff;
+  color: #E6E5EA;
   padding: 0px 16px;
   box-sizing: border-box;
   font-family: "JetBrains Mono", monospace;
@@ -43,7 +43,7 @@ body {
   text-align: left;
 }
 .generator--main .generator-form .input-range--div {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .generator--main .generator-form .input-range--div .Character-length--box {
   display: flex;
@@ -91,6 +91,54 @@ body {
   background-color: aquamarine;
   position: absolute;
   z-index: 0;
+}
+.generator--main .generator-form .checkbox-list {
+  margin-bottom: 32px;
+}
+.generator--main .generator-form .checkbox-list li {
+  margin-bottom: 17px;
+}
+.generator--main .generator-form .checkbox-list li:last-child {
+  margin: 0;
+}
+.generator--main .generator-form .checkbox-list li .input-checkbox {
+  display: none;
+}
+.generator--main .generator-form .checkbox-list li .checkbox-label {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.generator--main .generator-form .checkbox-list li .checkbox-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #E6E5EA;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.generator--main .generator-form .checkbox-list li .checkbox-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  border-bottom: 3px solid #24232C;
+  border-left: 3px solid #24232C;
+  left: 3.5px;
+  top: 4.5px;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+.generator--main .generator-form .checkbox-list li .input-checkbox:checked + .checkbox-label::after {
+  background-color: #A4FFAF;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

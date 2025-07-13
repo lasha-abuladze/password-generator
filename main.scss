@@ -1,7 +1,8 @@
 
 // text colors
-$primary-color:#fff;
+$primary-color:#E6E5EA;
 $secondary-color: #817D92;
+$neon-green: #A4FFAF;
 
 
 //background colos
@@ -57,14 +58,20 @@ body {
         }
     }
 
+
     .generator-form {
         background-color: $form-Backgroud;
         padding: 16px 21px;
         box-sizing: border-box;
         text-align: left;
 
+
+
+        // ინფუთიდ დეფაულტ სტილები 
+        // გასანულებელია მოზილას ბრაუზერისთვის
+
         .input-range--div {
-            margin-bottom: 50px;
+            margin-bottom: 32px;
             
             .Character-length--box {
                 @include flex-row();
@@ -76,7 +83,7 @@ body {
 
                 .Characters-quantity {
                     font-size: 24px;
-                    color: #A4FFAF;
+                    color: $neon-green;
                 }
 
 
@@ -123,7 +130,67 @@ body {
                 }
             }
 
+            
+
         }
+
+        .checkbox-list {
+
+            margin-bottom: 32px;
+
+            li {
+                margin-bottom: 17px;
+                &:last-child {
+                    margin: 0;
+                }
+
+                .input-checkbox {
+                    display: none;
+                }
+
+                .checkbox-label {
+                    font-size: 16px;
+                    font-weight: 700;
+                    position: relative;
+                    padding-left: 40px;  
+                    cursor: pointer;                  
+                }
+
+                .checkbox-label::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid $primary-color;
+                    box-sizing: border-box;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+
+                .checkbox-label::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 10px;
+                    height: 5px;
+                    border-bottom: 3px solid $form-Backgroud;
+                    border-left: 3px solid $form-Backgroud;
+                    left: 3.5px;
+                    top: 4.5px;
+                    transform: rotate(-45deg);
+                    z-index: 1;
+                }
+
+                .input-checkbox:checked + .checkbox-label::after {
+                    background-color: $neon-green;
+                    border: none;
+                }
+
+            }
+        }
+
 
         
     }
