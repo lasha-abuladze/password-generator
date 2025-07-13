@@ -140,5 +140,57 @@ body {
   background-color: #A4FFAF;
   border: none;
 }
+.generator--main .generator-form .password-strength--contaier {
+  padding: 14px 16px;
+  box-sizing: border-box;
+  background-color: #18171F;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  color: #817D92;
+}
+.generator--main .generator-form .password-strength--contaier .password-strength-graphic--container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.generator--main .generator-form .password-strength--contaier .password-strength-graphic--container .password-strength {
+  font-size: 18px;
+  color: #E6E5EA;
+}
+.generator--main .generator-form .password-strength--contaier .password-strength-graphic--container .password-strength--boxes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.generator--main .generator-form .password-strength--contaier .password-strength-graphic--container .password-strength--boxes div {
+  width: 10px;
+  height: 28px;
+  background-color: #F8CD65;
+  box-sizing: border-box;
+}
+.generator--main .generator-form .password-strength--contaier .password-strength-graphic--container .password-strength--boxes div:last-child {
+  background: none;
+  border: 2px solid #E6E5EA;
+}
+.generator--main .generator-form .submit-btn {
+  width: 100%;
+  height: 56px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #A4FFAF;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
 
 /*# sourceMappingURL=style.css.map */
