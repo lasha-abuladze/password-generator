@@ -45,7 +45,7 @@ body {
 .generator--main .generator-form .input-range--div {
   margin-bottom: 32px;
 }
-.generator--main .generator-form .input-range--div .Character-length--box {
+.generator--main .generator-form .input-range--div .character-length--box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,7 +53,7 @@ body {
   font-size: 16px;
   font-weight: 700;
 }
-.generator--main .generator-form .input-range--div .Character-length--box .Characters-quantity {
+.generator--main .generator-form .input-range--div .character-length--box .characters-quantity {
   font-size: 24px;
   color: #A4FFAF;
 }

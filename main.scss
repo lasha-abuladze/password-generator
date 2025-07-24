@@ -73,7 +73,7 @@ body {
         .input-range--div {
             margin-bottom: 32px;
             
-            .Character-length--box {
+            .character-length--box {
                 @include flex-row();
                 justify-content: space-between;
                 margin-bottom: 23px;
@@ -81,7 +81,7 @@ body {
                 font-size: 16px;
                 font-weight: 700;
 
-                .Characters-quantity {
+                .characters-quantity {
                     font-size: 24px;
                     color: $neon-green;
                 }
