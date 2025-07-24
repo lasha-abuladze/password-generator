@@ -5,14 +5,30 @@ const inputRangeContainer = document.querySelector(`.range-input--container`);
 const inputRangeTruck = document.querySelector(`.input-range--truck`);
 
 
-const inputRangeLength = getComputedStyle(inputRangeContainer).width;
+let inputRangeLength;
 let inputRangeTruckLength;
 
 
+updateInputRange();
+window.addEventListener(`resize`, updateInputRange);
+
 
 inputRange.addEventListener(`input`, () => {
-    
-    inputRangeTruckLength = (parseInt(inputRangeLength) / 20) * parseInt(inputRange.value);
-    inputRangeTruck.style.width = `${inputRangeTruckLength}px`
-    
+    calcInputRangeTruckWidth();    
 })
+
+
+function updateInputRange() {
+    
+    calcInputRangeWidth()
+    calcInputRangeTruckWidth();
+}
+
+function calcInputRangeWidth() {
+    inputRangeLength = getComputedStyle(inputRangeContainer).width
+}
+
+function calcInputRangeTruckWidth() {
+    inputRangeTruckLength = (parseInt(inputRangeLength) / 20) * parseInt(inputRange.value);
+    inputRangeTruck.style.width = `${inputRangeTruckLength}px`;
+}
